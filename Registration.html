@@ -4,10 +4,10 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- this the Title on website tabs -->
-  <title>Register</title>
+  <title>Requirements</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Our custom styleSheet Link -->
-  <link rel="stylesheet" type="text/css" media="screen" href="about.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="requirestyle.css" />
   <!-- Favicon link! - this is the small icon on website tabs -->
   <link rel="shortcut icon" type="image/png" href="./images/Favicon.ico"/>
   <!-- BootStrap CDN Links -->
@@ -39,6 +39,10 @@
             <a class="navbar-brand" href="Registration.html">Register</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
+               <li class="nav-item">
+            <a class="navbar-brand" href="Requirements.html">Requirements</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
         </li>
         <li class="nav-item">
           <a class="nav-brand" href="about.html">About</a>
@@ -54,147 +58,14 @@
     <div class="py-5 Jumbotron-img my-md-5">
       <div class="py-5 container text-center">
         <!-- https://getbootstrap.com/docs/4.1/content/typography/#display-headings  -->
-        <p class="display-1">Registration</p>
+        <p class="display-1">Requirements</p>
       </div>
     </div>
 
 
   <div class="my-md-5">
-    <p class="text-center display-4"> Fillup the Form</p>
-    <form action="/">
-        <h1>Enrollment</h1>
-        <fieldset>
-          <legend>
-            <h3>Student Details</h3>
-          </legend>
-          <div  class="Requires to Fillup">
-            <div><label>LRN    :</label><input type="text" name="name" required></div>
-            <div><label>SY     :</label><input type="text" name="name" required></div>
-            <div><label>Quarter:</label><input type="text" name="name" required></div>
-            <div><label>Level  :</label><input type="text" name="name" required></div>
-            <div>
-              <label>Prog/Strand</label>
-              <div class="strand">
-                <input type="radio" value="none" id="ict" name="strand" required/>
-                <label for="ict" class="radio">ICT</label>
-                <input type="radio" value="none" id="humss" name="strand" required/>
-                <label for="humss" class="radio">HUMSS</label>
-                <input type="radio" value="none" id="abm" name="strand" required/>
-                <label for="abm" class="radio">ABM</label>
-                <input type="radio" value="none" id="tvl" name="strand" required/>
-                <label for="tvl" class="radio">TVL</label>
-                <input type="radio" value="none" id="juniorhigh" name="strand" required/>
-                <label for="juniorhigh" class="radio">JuniorHigh</label>
-              </div>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>
-            <h3>Personal Details</h3>
-          </legend>
-          <div  class="personal-details">
-            <div>
-              <div><label>Name*</label><input type="text" name="name" required></div>
-              <div><label>Phone*</label><input type="text" name="name" required></div>
-              <div><label>Street</label><input type="text" name="name"></div>
-              <div><label>City*</label><input type="text" name="name" required></div>
-              <div>
-                <label>Country*</label>  
-                <select>
-                  <option value="Philippines">Philippines</option>
-                  <option value="Armenia">Armenia</option>
-                  <option value="Russia">Russia</option>
-                  <option value="Germany">Germany</option>
-                  <option value="France">France</option>
-                  <option value="USA">USA</option>
-                  <option value="UK">UK</option>
-                </select>
-              </div>
-              <div><label>Contact</label><input type="text" name="name"></div>
-            </div>
-            <div>
-              <div>
-                <label>Gender*</label>
-                <div class="gender">
-                  <input type="radio" value="none" id="male" name="gender" required/>
-                  <label for="male" class="radio">Male</label>
-                  <input type="radio" value="none" id="female" name="gender" required/>
-                  <label for="female" class="radio">Female</label>
-                </div>
-              </div>
-              <div class="birthdate">
-                <label>Birthdate*</label>
-                <div class="bdate-block">
-                  <select class="day" required>
-                    <option value=""></option>
-                    <option value="01">01</option>
-                    <option value="02">02</option>
-                    <option value="03">03</option>
-                    <option value="04">04</option>
-                    <option value="05">05</option>
-                    <option value="06">06</option>
-                    <option value="07">07</option>
-                    <option value="08">08</option>
-                    <option value="09">09</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
-                    <option value="14">14</option>
-                    <option value="15">15</option>
-                    <option value="16">16</option>
-                    <option value="17">17</option>
-                    <option value="18">18</option>
-                    <option value="19">19</option>
-                    <option value="20">20</option>
-                    <option value="21">21</option>
-                    <option value="22">22</option>
-                    <option value="23">23</option>
-                    <option value="24">24</option>
-                    <option value="25">25</option>
-                    <option value="26">26</option>
-                    <option value="27">27</option>
-                    <option value="28">28</option>
-                    <option value="29">29</option>
-                    <option value="30">30</option>
-                    <option value="31">31</option>
-                  </select>
-                  <select class="month" required>
-                    <option value=""></option>
-                    <option value="January">January</option>
-                    <option value="February">February</option>
-                    <option value="March">March</option>
-                    <option value="April">April</option>
-                    <option value="May">May</option>
-                    <option value="June">June</option>
-                    <option value="July">July</option>
-                    <option value="August">August</option>
-                    <option value="September">September</option>
-                    <option value="October">October</option>
-                    <option value="November">November</option>
-                    <option value="December">December</option>
-                  </select>
-                  <input type="text" name="name" required>
-                </div>
-              </div>
-              <div>
-                <label>Nationality*</label>              
-                <select required>
-                  <option value="Pilipino">Pilipino</option>
-                  <option value="Armenian">Armenian</option>
-                  <option value="Russian">Russian</option>
-                  <option value="German">German</option>
-                  <option value="French">French</option>
-                  <option value="American">American</option>
-                  <option value="English">English</option>
-                </select>
-              </div>
-            </div>
-          </div>
-        </fieldset>
-        <button type="submit" href="/">Submit</button>
-        <button type="index.html" href="/">Exit</button>
-      </form>
+    <p class="text-center display-4">Please Complete the requirements</p>
+    <P class="text-center display-5">"Please ensure that all the required documents are complete before you go in SINHS."</p>
     </div>
   </div>
 </body>
