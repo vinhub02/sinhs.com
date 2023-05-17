@@ -1,0 +1,66 @@
+<html>
+    <header>
+        <title>Required Documments</title>
+        </header>
+        <style>
+           body {
+               background-image: url('./images/black_background.jpg');
+               background-repeat: no-repeat;
+               background-size: cover;
+            }
+            a{
+                color: white;
+                font-size: 15px;
+            }
+            h5{
+                color: white;
+                font-size: 15px;
+            }
+
+        </style>
+<body>
+    <center>
+        <div class="gallery-container">
+            <a href = "Enrollment.html" class = "nav-link">Home</a>
+            <h5><b>Required Documments</b><br></h5>
+            <a class="btn" id="prevBtn" href="#">Previous</a>
+            <a class="btn" id="nextBtn" href="#">Next</a>
+        </center>
+        <center>
+          <img id="image" class="gallery-image" src="first_image.jpg" alt="Image">
+        </center>
+        </div>
+</div>
+<script>
+    var images = ["./images/PSA.jpg", "./images/StudentCard.jpg", "third_image.jpg"]; // Add the image URLs here
+    var currentIndex = 0;
+    var imageElement = document.getElementById("image");
+    var prevBtn = document.getElementById("prevBtn");
+    var nextBtn = document.getElementById("nextBtn");
+
+    function showImage(index) {
+      imageElement.src = images[index];
+      prevBtn.disabled = (index === 0);
+      nextBtn.disabled = (index === images.length - 1);
+    }
+
+    prevBtn.addEventListener("click", function() {
+      if (currentIndex > 0) {
+        currentIndex--;
+        showImage(currentIndex);
+      }
+    });
+
+    nextBtn.addEventListener("click", function() {
+      if (currentIndex < images.length - 1) {
+        currentIndex++;
+        showImage(currentIndex);
+      }
+    });
+
+    showImage(currentIndex);
+  </script>
+</div>
+</section>
+</body>
+</html>
